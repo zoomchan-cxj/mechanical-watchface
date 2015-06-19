@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.wearclan.mechanicalwatchface.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="13dp"
+            android:paddingLeft="13dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sector display"
+                android:textSize="10pt"
+                android:paddingTop="28dp"
+                android:paddingBottom="6dp"
+
+                android:gravity="left"
+
+                />
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show sector"
+                android:id="@+id/showSector"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:checked="true"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"/>
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gear speed setting"
+                android:textSize="10pt"
+                android:layout_marginTop="28dp"
+                android:paddingBottom="6dp"
+                android:gravity="left"
+
+                />
+
+            <RadioGroup android:id="@+id/gearGroup"
+                android:contentDescription="gear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+
+                >
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/in1"
+                    android:text="x1.0"
+                    android:checked="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp"
+
+                    >
+
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/in2"
+                    android:text="x1.5"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/in3"
+                    android:text="x2.0"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+
+                </RadioButton>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/in4"
+                    android:text="x3.0"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    android:paddingLeft="12dp">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
